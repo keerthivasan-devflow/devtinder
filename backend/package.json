@@ -1,0 +1,24 @@
+{
+  "name": "devtinder-backend",
+  "version": "1.0.0",
+  "description": "backend services for devtinder application's",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "test"
+  },
+  "keywords": [
+    "devtinder",
+    "backend",
+    "express",
+    "nodejs",
+    "api"
+  ],
+  "author": "keerthivasan mani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  }
+}

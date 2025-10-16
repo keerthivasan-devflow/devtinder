@@ -1,0 +1,7 @@
+
+# These directories have been temporarily included in the .gitignore file. 
+# Some will be deleted, while others will be retained for future reference.
+
+node_modules
+references-src
+README.md
