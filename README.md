@@ -1,19 +1,5 @@
-## Project Folder Setup - Episode 3
-1. npm init
-2. npm install express
-3. create a src folder
-4. create a file 'app.js' as an entry point file
-
-### NPM Packages
-- express
-- mongoose
-- nodemon
-- cookie-parser
-- validator
-- bcrypt
-- jsonwebtoken
-
 ### Need to discuss
+
 1. What is cluster in mongodb?
 2. What is model in mongodb?
 3. What is middleware?
@@ -27,35 +13,54 @@
 - If there is a route like app.get("/user"), whether this will be called for post method?
 - Can we have same route for different HTTP methods like app.get("/user") and app.post("/user") ?
 
+## Points to remember
 
-### API's Lists
-- POST /signup
-- POST /login
-- POST /logout
+- When you have created an mongodb account in cloud.mongodbatlas, then you will be redirected you deploy your cluster. What does it mean?
 
-- GET /profile/view
-- GET /profile/edit
-- GET /profile/reset/password
+## CORS
+// const cors = require("cors");
+// app.use(
+//   cors({
+//     origin: "http://localhost:8083/",
+//     credentials: true,
+//   }),
+// );
 
-- POST - /request/send/interested/:userId
-- POST - /request/send/ignored/:userId
-- **POST - /request/send/:status/:userId** - Dynamic API
+## User Details For Sign-Up API
 
-
-- POST - /request/review/accepted/:requestedId
-- POST - /request/review/rejected/:requestedId
-- **POST - /request/review/:status/:requestedId** - Dynamic API
-
-- GET - /user/connections
-- GET - /user/feed/
-- GET - /user/requests
-
-
-### Git Commands
-
-- To add only modifies and deleted files but not untracked any new files
-- `git add -u`
-- `git diff --name-only --diff-filter=M | xargs git add`
-
-- `git ls-files --deleted -z | xargs -0 git add`
-- `xargs -0 git add adds only those deleted files to the staging area.`
+{
+"firstname": "Sofia",
+"lastname": "Rossi",
+"email": "sofia.rossi@example.com",
+"password": "Sofia@123",
+"phone": 7010581211,
+"age": 25,
+"gender": "female"
+}
+{
+  "firstname": "Emma",
+  "lastname": "Schneider",
+  "email": "emma.schneider@example.com",
+  "password": "Emma@123",
+  "phone": 4420198765,
+  "age": 28,
+  "gender": "female"
+}
+{
+  "firstname": "Carlos",
+  "lastname": "Martinez",
+  "email": "carlos.martinez@example.com",
+  "password": "Carlos@123",
+  "phone": 5215512345678,
+  "age": 27,
+  "gender": "male"
+}
+{
+  "firstname": "Jonas",
+  "lastname": "Andersen",
+  "email": "jonas.andersen@example.com",
+  "password": "Jonas@123",
+  "phone": 4520123456,
+  "age": 29,
+  "gender": "male"
+}
